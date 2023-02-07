@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/posters.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <title>Peliculas</title>
     <!-- fonts awasone cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -53,9 +54,9 @@
         </nav>
     </header>
     <!-- termina header -->
-    <main>
+    <main id="container-main-poster">
       <!-- inicia seccion carrousel -->
-        <section>
+        <section id="container-poster">
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -511,8 +512,32 @@
  </div>
 </div>
         </section>
+        <video muted autoplay loop>
+          <source src="./assets/video/avatar-el-camino-del-agua (online-video-cutter.com).mp4" 
+           type="video/mp4">
+        </video>
+        <div class="capa"></div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-basic">
+        <footer>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Inicio</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">Aviso legal</a></li>
+                <li class="list-inline-item"><a href="#">Terminos</a></li>
+                <li class="list-inline-item"><a href="#">De Pelicula</a></li>
+            </ul>
+            <p class="copyright">Fernando Perez © 2023</p>
+        </footer>
+    </div>
+    </footer>
 
     <script src="./assets/js/Burger.js"></script>
     <!-- script imports -->

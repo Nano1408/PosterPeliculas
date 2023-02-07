@@ -103,6 +103,10 @@
 .card .details .tags span:nth-child(2){
     background: #ff5722;
 }
+.card .details .tags span:nth-child(3){
+    background: #ffd29d;
+    color: #000000;
+}
 .card .details .info{
     color: #fff;
     margin-top: 10px;

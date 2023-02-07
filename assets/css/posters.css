@@ -28,6 +28,12 @@
         grid-template-columns: repeat(1, 100%);
     }
 }
+@media screen and (max-width:550px) {
+    #container-card{
+        padding-left:5%;
+        grid-template-columns: repeat(1, 100%);
+    }
+}
 .card{
     position: relative;
     width: 320px;

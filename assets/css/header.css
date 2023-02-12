@@ -151,7 +151,7 @@ header{
         left: 0;
         right: 0;
         transition: .5s;
-        z-index: 3;
+        z-index: 5;
     }
     #nav-menu .li--list-menu{
         margin-bottom: 10px;

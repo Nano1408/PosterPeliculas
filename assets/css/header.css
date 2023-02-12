@@ -47,6 +47,7 @@ header{
 .nav--list--menu{
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .li--list-menu{
     list-style: none;
@@ -54,6 +55,14 @@ header{
     color: #EDF2F4;
     font-size: 28px;
     font-family: 'Varela Round', sans-serif;
+    transition: .4s;
+    cursor: pointer;
+}
+.li--list-menu:hover{
+    padding: 0px 30px;
+    border-radius: 10px;
+    background-color: #000;
+    transition: .4s;
 }
 .icons{
     display: flex;
@@ -104,26 +113,22 @@ header{
 .carousel-control-next,.carousel-control-prev{
     background-color: #bdbdbe43 !important;
 }
-.navegar_lista_visible{
-    margin-top: 48%;
-    left: 0;
-    z-index: -1;
-}
 @media screen and (max-width:900px) {
+    .navegar_lista_visible{
+    margin-left: -100%;
+    overflow: hidden;
+    background: #000;
+    left: 0;
+    right: 0;
+    transition: .3s;
+    z-index: -10;
+   }
     .burger{
         display: block;
     }
     .burger-list{
         display: block;
     }
-    /* .burger-list{
-        display: none;
-        color: #fff;
-        position: absolute;
-        left: -100%;
-        margin-top: 100px;
-        z-index: 1;
-    } */
     .logo, img{
         margin: 0;
         text-align: center;
@@ -134,6 +139,25 @@ header{
         object-fit: fill;
     }
     #nav-menu .nav--list--menu{
-        display: none;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        text-align: center;
+        background: #2B2D42;
+        padding-top: 50px;
+        top: 80px;
+        left: 0;
+        right: 0;
+        transition: .5s;
+        z-index: 3;
+    }
+    #nav-menu .li--list-menu{
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    #nav-menu .li--list-menu:hover{
+        margin: 0 30%;
     }
 }

@@ -1,5 +1,5 @@
 const NavBurger = document.querySelector(".burger");
-const NavLista = document.querySelector(".navega_lista");
+const NavLista = document.querySelector(".nav--list--menu");
 
 NavBurger.addEventListener("click", () => {
     NavLista.classList.toggle("navegar_lista_visible");
@@ -9,7 +9,7 @@ NavBurger.addEventListener("click", () => {
     }else{
         NavBurger.setAttribute("arial-label", "abrir menu");
     }
-const MenuLink = document.querySelectorAll(".navega_lista");
+const MenuLink = document.querySelectorAll(".nav--list--menu");
 MenuLink.forEach(MenuLink =>{
     MenuLink.addEventListener("click", function(){
         NavLista.classList.remove("navegar_lista_visible");
